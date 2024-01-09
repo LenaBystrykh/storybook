@@ -4,13 +4,17 @@ export default {
     title: 'CardsList',
     component: CardsList,
     tags: ['autodocs'],
-    argTypes: {
-      cards: {
-        control: {
-          type: 'object',
-        },
-      },
-    }
+    // Описывать параметры здесь, если они нужны для всего компонента
+    // parameters: {
+    //   backgrounds: {
+    //     values: [
+    //       { name: 'black', value: '#000' },
+    //       { name: 'dark', value: '#222' },
+    //       { name: 'light', value: '#ddd' },
+    //       { name: 'white', value: '#fff' },
+    //     ]
+    //   }
+    // }
   };
   
   export const Primary = {
@@ -32,6 +36,17 @@ export default {
             { id: 7, title: 'Карточка 7', subText: 'Подпись 7', size: 'small', btnText: 'Открыть', color: '#5d41fc' },
         ]
     },
+    // Описывать параметры здесь, если они нужны для конкретной стори
+    // parameters: {
+    //   backgrounds: {
+    //     values: [
+    //       { name: 'black', value: '#000' },
+    //       { name: 'dark', value: '#222' },
+    //       { name: 'light', value: '#ddd' },
+    //       { name: 'white', value: '#fff' },
+    //     ]
+    //   }
+    // }
   };
 
   export const Empty = {

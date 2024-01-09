@@ -58,6 +58,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 20px;
 
     &--small {
         width: 200px;

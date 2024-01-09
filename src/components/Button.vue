@@ -32,8 +32,8 @@ export default {
     width: 100%;
     max-width: 600px;
     height: 40px;
-    border-radius: 16px;
-    padding: 6px;
+    border-radius: 20px;
+    padding: 6px 16px;
     outline: none;
     border: none;
     color: white;

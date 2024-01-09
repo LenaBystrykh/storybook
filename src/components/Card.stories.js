@@ -22,6 +22,7 @@ export default {
     },
   };
   
+  /** Card example */
   export const Primary = {
     render: (args) => ({
         components: { Card },
@@ -36,6 +37,7 @@ export default {
     },
   };
 
+  /** Example of the default card without any parameters (empty, medium sized) */
   export const Empty = {
     render: (args) => ({
         components: { Card },
@@ -44,12 +46,10 @@ export default {
         },
         template: '<Card v-bind="args" />',
       }),
-    args: {
-        title: '',
-        subText: '',
-    },
+    args: {},
   };
 
+  /** Example of the card with huge amount of text in title and paragraph */
   export const LongText = {
     render: (args) => ({
         components: { Card },
@@ -64,6 +64,7 @@ export default {
       },
   };
 
+  /** Example of modal opening by click on the button on the card + testing */
   export const WithOpeningModal = {
     render: (args) => ({
         components: { Card },
