@@ -1,7 +1,7 @@
 <template>
     <div class="cards">
         <div v-for="card in cards" :key="card.id">
-            <Card :title="card.title" :subText="card.subText" />
+            <Card :title="card.title" :subText="card.subText" :size="card.size" :btnText="card.btnText" :color="card.color" />
         </div>
     </div>
 </template>
