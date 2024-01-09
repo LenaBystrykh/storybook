@@ -1,8 +1,10 @@
 import Button from './Button.vue';
 
+/** Button component with customizable text and bg color*/
 export default {
     title: 'Button',
     component: Button,
+    tags: ['autodocs'],
     argTypes: {
       color: {
         control: 'color',

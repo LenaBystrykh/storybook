@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Modal v-if="isOpened" :title="title" :text="subText" />
+        <Modal v-if="isOpened" :title="title" :text="subText" @close="isOpened = false" />
         <div v-if="!isOpened" :class="classes">
             <div>
                 <h3 class="card__title">{{ title }}</h3>
@@ -19,15 +19,20 @@ export default {
     name: 'Card',
     components: { Button, Modal },
     props: {
+        /** Card title */
         title: String,
+        /** Card text */
         subText: String,
+        /** Card size: small/medium/large */
         size: {
             type: String,
             validator(value) {
                 return ['small', 'medium', 'large'].indexOf(value) !== -1;
             },
         },
+        /** Card button text */
         btnText: String,
+        /** Card button background color */
         color: String
     },
     data() {

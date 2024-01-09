@@ -3,6 +3,14 @@ import CardsList from './CardsList.vue';
 export default {
     title: 'CardsList',
     component: CardsList,
+    tags: ['autodocs'],
+    argTypes: {
+      cards: {
+        control: {
+          type: 'object',
+        },
+      },
+    }
   };
   
   export const Primary = {

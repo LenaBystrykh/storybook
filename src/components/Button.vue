@@ -6,16 +6,21 @@
 export default {
     name: 'Card',
     props: {
+        /** Button text */
         btnText: { 
             type: String, 
             default: 'Тык'
         },
-        color: String
+        /** Button background color */
+        color: { 
+            type: String, 
+            default: '#5d41fc'
+        },
     },
     computed: {
         style() {
             return {
-                backgroundColor: this.color || '#5d41fc'
+                backgroundColor: this.color
             }
         }
     }

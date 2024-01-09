@@ -1,5 +1,5 @@
 <template>
-    <div class="modal-bg" />
+    <div class="modal-bg" @click="$emit('close')"/>
     <div class="modal" data-testid="modal">
         <h3 class="title">{{ title }}</h3>
         <p class="text">{{ text }}</p>
